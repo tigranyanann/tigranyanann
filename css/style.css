@@ -7,10 +7,10 @@
 }
 
 div.container {
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 0 15px;
-    max-width: 1140px;
     width: 100%;
+    max-width: 1140px;
 }
 
 header.header {
@@ -22,7 +22,6 @@ div.all-header {
     display: flex;
     text-align: center;
     line-height: 27.2px;
-    margin: 0 -15px;
     justify-content: space-between;
     padding: 10px 0px;
 }
@@ -251,7 +250,7 @@ div.swiper-button-next::after {
     display: none;
 }
 
-                                            /* MAIN 1 */
+                                            /* MAIN-1 */
 
 div.swiper-wrapper div.second-img {
     background-image: url(../img/xhero_bg_2.jpg.pagespeed.ic.AY_mDUVQtn.webp);
@@ -348,6 +347,152 @@ div.book-now a:hover {
     background: none;
 }
 
+                                            /* MAIN-2 */
+section.three-boxs {
+    padding: 80px 0px;
+}
+
+div.boxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+    z-index: 9;
+}
+
+div.box {
+    position: relative;
+    padding: 0 15px;
+    max-width: 379px;
+    width: 100%;
+    z-index: 9;
+}
+
+div.box a {
+    overflow: hidden;
+    transition: .3s all;
+    max-width: 349px;
+    max-height: 399px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+div.box a img {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    vertical-align: middle;
+    transition: .3s all ease-in-out;
+    max-height: 399px;
+    height: 100%;
+    max-width: 100%;
+    text-align: center;
+    object-fit: cover;
+}
+
+div.box a div {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27.2px;
+    transition: .3s all;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+div.box a div h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 19.2px;
+    font-weight: 400;
+    line-height: 23.4px;
+    margin-bottom: 8px;
+    position: relative;
+    text-align: center;
+    z-index: 7;
+}
+
+div.box a:hover img {
+    transform: scale(1.05);
+}
+
+div.box a:hover div {
+    bottom: 30px;
+}
+
+div.box a::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom,transparent 0%,transparent 18%,rgba(0,0,0,.8) 99%,rgba(0,0,0,.8) 100%);
+}
+
+                                                /* MAIN-3 */
+section.section3 {
+    padding: 80px 0px;
+}
+
+div.icons-boxs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+div.icon-box {
+    max-width: 33.3333%;
+    padding: 0 15px;
+    position: relative;
+    display: flex;
+}
+
+div.icon-box span {
+    margin-right: 24px;
+}
+
+div.icon-box span i {
+    color: rgb(239, 108, 87);
+    font-size: 44px;
+}
+
+div.icon-box div.ib-text h5 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 77, 77);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+div.icon-box div.ib-text p {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(77, 77, 77);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27.2px;
+    margin-bottom: 16px;
+}
+
+div.icon-box div.ib-text a {
+    margin-bottom: 16px;
+    color: rgb(239, 108, 87);
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s all;
+}
+
+div.icon-box div.ib-text a:hover {
+    color: #e43216;
+}
+
+
                                             /* MEDIA'S */
 
 @media screen and (max-width: 1200px) {
@@ -373,7 +518,30 @@ div.book-now a:hover {
     div.imgs-text {
         max-width: 480px;
     }
+    
+    div.boxs {
+        flex-wrap: wrap;
+    }
+    
+    div.box {
+        margin-bottom: 24px;
+    }
+    
+    div.icons-boxs {
+        flex-wrap: wrap;
+    }
 }
+
+                                            /* !!!!!!!!!!!!! */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    div.box3 {
+        transform: translateX(-50%);
+    }
+}
+
+                                            /* !!!!!!!!!!!!! */
+
 
 
 
