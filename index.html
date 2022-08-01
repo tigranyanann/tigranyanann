@@ -136,7 +136,7 @@
                        <div class="ib-text">
                            <h5>Air Ticketing</h5>
                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                           <a href="#">Learn More</a>
+                           <a href="#" class="link">Learn More</a>
                        </div>
                    </div>
                    <div class="icon-box">
@@ -144,7 +144,7 @@
                        <div class="ib-text">
                            <h5>Air Ticketing</h5>
                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                           <a href="#">Learn More</a>
+                           <a href="#" class="link">Learn More</a>
                        </div>
                    </div>
                    <div class="icon-box">
@@ -152,9 +152,55 @@
                        <div class="ib-text">
                            <h5>Air Ticketing</h5>
                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                           <a href="#">Learn More</a>
+                           <a href="#" class="link">Learn More</a>
                        </div>
                    </div>
+               </div>
+           </div>
+       </section>
+       <section class="section4">
+           <div class="container">
+               <div class="testimonials">
+                   <h2>Testimonials</h2>
+               </div>
+               <div class="swiper mySwiper2">
+                   <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide all-slide">
+                                <div class="swiper-img">
+                                    <img src="./img/ximg_2.jpg.pagespeed.ic.O2X5ML22wr.webp" alt="#">
+                                </div>
+                                <div class="swiper-texts">
+                                    <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro”</p>
+                                    <p>- Clair Augustin, <a href="#" class="link">Traveler</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide all-slide">
+                                <div class="swiper-img">
+                                    <img src="./img/ximg_4.jpg.pagespeed.ic.9Hz6SLvA4M.webp" alt="#">
+                                </div>
+                                <div class="swiper-texts">
+                                     <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro”</p>
+                                      <p>- James Martin, <a href="#" class="link">Traveler</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide all-slide">
+                                <div class="swiper-img">
+                                    <img src="./img/ximg_1.jpg.pagespeed.ic.9-q5m7McXm.webp" alt="#">
+                                </div>
+                                <div class="swiper-texts">
+                                    <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique dolorem quisquam laudantium, incidunt id laborum, tempora aliquid labore minus. Nemo maxime, veniam! Fugiat odio nam eveniet ipsam atque, corrupti porro”</p>
+                                     <p>- James Martin, <a href="#" class="link">Traveler</a></p>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="swiper-button-next2"></div>
+                   <div class="swiper-button-prev2"></div>
                </div>
            </div>
        </section>
@@ -162,6 +208,9 @@
     
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
      
     <!-- Initialize Swiper -->
     <script>
@@ -172,6 +221,19 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next2",
+          prevEl: ".swiper-button-prev2",
         },
       });
     </script>

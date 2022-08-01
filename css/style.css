@@ -268,7 +268,7 @@ div.swiper-wrapper div.second-img {
     background-position: center;
 }
 
-div.swiper-wrapper div.swiper-slide::before {
+div.swiper-wrapper div.second-img, div.first-img::before {
     position: absolute;
     content: "";
     left: 0;
@@ -354,7 +354,6 @@ section.three-boxs {
 
 div.boxs {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: -150px;
     z-index: 9;
@@ -363,8 +362,8 @@ div.boxs {
 div.box {
     position: relative;
     padding: 0 15px;
-    max-width: 379px;
-    width: 100%;
+    max-width: 370px;
+    width: calc(100% - 15px);
     z-index: 9;
 }
 
@@ -440,16 +439,18 @@ section.section3 {
 
 div.icons-boxs {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
 
 div.icon-box {
-    max-width: 33.3333%;
+    max-width: 369px;
     padding: 0 15px;
     position: relative;
     display: flex;
+    width: calc(100% - 15px);
+    margin-bottom: 24px;
 }
 
 div.icon-box span {
@@ -479,7 +480,7 @@ div.icon-box div.ib-text p {
     margin-bottom: 16px;
 }
 
-div.icon-box div.ib-text a {
+main a.link {
     margin-bottom: 16px;
     color: rgb(239, 108, 87);
     font-size: 16px;
@@ -488,12 +489,58 @@ div.icon-box div.ib-text a {
     transition: .3s all;
 }
 
-div.icon-box div.ib-text a:hover {
+main a.link:hover {
     color: #e43216;
 }
 
+                                                /* MAIN-4 */
 
-                                            /* MEDIA'S */
+section.section4 {
+    background-color: rgb(248, 249, 250);
+    padding: 80px 0px;
+    position: relative;
+}
+
+div.testimonials {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 0 15px;
+}
+
+div.testimonials h2 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 38.4px;
+    margin-bottom: 8px;
+}
+
+div.all-slide {
+    display: flex;
+}
+
+div.swiper-img {
+    max-width: 555px;
+    width: 100%;
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 48px;
+    line-height: 27.2px;
+}
+
+div.swiper-img img {
+    max-width: 525px;
+    width: 100%;
+    
+}
+
+
+                                                /* MEDIA'S */
 
 @media screen and (max-width: 1200px) {
     nav.nav {
@@ -532,15 +579,23 @@ div.icon-box div.ib-text a:hover {
     }
 }
 
-                                            /* !!!!!!!!!!!!! */
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    div.box3 {
-        transform: translateX(-50%);
+@media screen and (max-width: 769px) {
+    div.boxs {
+        justify-content: center;
     }
 }
 
-                                            /* !!!!!!!!!!!!! */
+@media screen and (max-width: 768px) {
+    div.icons-boxs {
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    div.icon-box {
+        padding: 0px;
+    }
+}
+
 
 
 
