@@ -260,15 +260,24 @@ div.swiper-wrapper div.second-img {
     color: rgb(77, 77, 77);
     position: relative;
     display: block;
-    width: 100%;
     min-height: 600px;
     transition: .8s all;
     opacity: 1;
     transform: matrix(1, 0, 0, 1, 0, 0);
+    z-index: 7;
     background-position: center;
+    width: 100%;
 }
 
-div.swiper-wrapper div.second-img, div.first-img::before {
+div.swiper-wrapper div.second-img:active {
+    cursor: pointer;
+}
+
+div.swiper-wrapper div.first-img:active {
+    cursor: pointer;
+}
+
+div.swiper-wrapper div.second-img::before {
     position: absolute;
     content: "";
     left: 0;
@@ -279,7 +288,18 @@ div.swiper-wrapper div.second-img, div.first-img::before {
     z-index: 5;
 }
 
-div.swiper-wrapper div.first-img{
+div.swiper-wrapper div.first-img::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 5;
+}
+
+div.swiper-wrapper div.first-img {
     background-image: url(../img/xhero_bg_1.jpg.pagespeed.ic.XyCHgqdNT-.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -497,7 +517,7 @@ main a.link:hover {
 
 section.section4 {
     background-color: rgb(248, 249, 250);
-    padding: 80px 0px;
+    padding-top: 80px;
     position: relative;
 }
 
@@ -536,7 +556,101 @@ div.swiper-img {
 div.swiper-img img {
     max-width: 525px;
     width: 100%;
-    
+}
+
+div.swiper-img:active {
+    cursor: pointer;
+}
+
+div.swiper-texts {
+    background-color: #fff;
+    margin-left: -100px;
+    padding: 48px;
+    position: relative;
+    max-width: 555px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+div.swiper-texts p {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+    margin-bottom: 16px;
+    max-width: 459px;
+    width: 100%;
+}
+
+div.swiper-texts p:last-child {
+    color: rgb(77, 77, 77);
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27.2px;
+}
+
+div.swiper-texts p a  {
+    font-style: normal;
+}
+
+div.swiper-buttons {
+    display: flex;
+    justify-content: center;
+    line-height: 51px;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+div.swiper-buttons div {
+    padding: 20px;
+    cursor: pointer;
+}
+
+div.swiper-buttons i {
+    color: rgb(77, 77, 77);
+    font-size: 23px;
+    line-height: 30px;
+}
+
+                                                /* MAIN-5 */
+
+section.section5 {
+    padding: 80px 0px;
+}
+
+div.title-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0 15px;
+    position: relative;
+}
+
+div.title-subtitle h2 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    line-height: 38.4px;
+    margin-bottom: 8px;
+}
+
+div.title-subtitle p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 16px;
+    line-height: 27.2px;
 }
 
 
@@ -577,6 +691,16 @@ div.swiper-img img {
     div.icons-boxs {
         flex-wrap: wrap;
     }
+    
+    div.all-slide {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.swiper-texts {
+        margin: 0px;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -593,6 +717,10 @@ div.swiper-img img {
     
     div.icon-box {
         padding: 0px;
+    }
+    
+    div.swiper-texts {
+        padding: 0px 15px;
     }
 }
 
