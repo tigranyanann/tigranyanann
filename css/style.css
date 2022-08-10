@@ -1003,6 +1003,10 @@ div.all-lst div.travel-with-us p a {
     border: 2px solid transparent;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -1017,6 +1021,218 @@ div.all-lst div.travel-with-us p a:hover {
     background: none;
     color: #000;
 }
+
+                                                    /* FOOTER */
+
+footer.footer {
+    padding: 128px 0px;
+    background-color: #333333;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto;
+    line-height: 27.2px;
+}
+
+div.footers-boxs {
+    display: flex;
+    line-height: 27.2px;
+    margin: 0 -15px;
+}
+
+div.about-travel {
+    max-width: 379px;
+    width: 100%;
+    position: relative;
+    padding: 0 15px;
+}
+
+div.travel-text {
+    margin-bottom: 48px;
+}
+
+div.footers-boxs h3 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+div.footers-boxs p {
+    color: #737373;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    line-height: 27.2px;
+}
+
+div.navigations {
+    max-width: 379px;
+    width: 100%;
+    position: relative;
+    padding: 0 15px;
+}
+
+div.nav-link {
+    margin: 0 -15px;
+}
+
+div.footer-ul {
+    display: flex;
+}
+
+div.footer-ul ul {
+    position: relative;
+    padding: 0 15px;
+    max-width: 50%;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+div.footer-ul ul li {
+    margin-bottom: 10px;
+}
+
+div.footer-ul ul li a {
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27.2px;
+    transition: .3s all;
+}
+
+div.footer-ul ul li a:hover {
+    color: #fff;
+}
+
+div.subs-email {
+    max-width: 379px;
+    width: 100%;
+    position: relative;
+    padding: 0 15px;
+}
+
+div.sub-email {
+    margin-bottom: 48px;
+}
+
+div.sub-email form div {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    max-width: 349px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+div.sub-email form div input {
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    flex-wrap: 400;
+    height: 43px;
+    line-height: 24px;
+    overflow: visible;
+    padding: 6px 12px;
+    position: relative;
+    width: 282px;
+    max-width: 100%;
+    transition: .15s all;
+    cursor: text;
+    display: block;
+    outline: none;
+}
+
+div.sub-email form div.input-group div.input-btn {
+    margin: -1px;
+    display: contents;
+    cursor: pointer;
+}
+
+div.sub-email form div.input-group div.input-btn span {
+    background-color: #ef6c57;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    overflow: visible;
+    vertical-align: middle;
+    z-index: 9;
+    transition: .15s all;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+div.sub-email form div.input-group div.input-btn span:hover {
+    border: 2px solid #000;
+    background: none;
+    color: #000;
+}
+
+div.footer-btn-text {
+    padding: 48px 0px;
+    margin: 0 -15px;
+    text-align: center;
+}
+
+div.btn-text {
+    padding: 0 15px;
+    line-height: 27.2px;
+}
+
+div.btn-text div {
+    margin-bottom: 48px;
+}
+
+div.btn-text div a {
+    background-color: transparent;
+    color: #999;
+    padding: 0  16px;
+    transition: .3s all;
+}
+
+div.btn-text div a:hover {
+    color: #fff;
+}
+
+div.btn-text div a span i {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+div.btn-text p {
+    color: #737373;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+div.btn-text p a {
+    color: #999;
+    transition: .3s all;
+}
+
+div.btn-text p a:hover {
+    color: #fff;
+}
+
                                                     /* MEDIA'S */
 
 @media screen and (max-width: 1200px) {
@@ -1091,6 +1307,12 @@ div.all-lst div.travel-with-us p a:hover {
     
     div.swiper-texts {
         margin: 0px;
+    }
+    
+    div.footers-boxs {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
