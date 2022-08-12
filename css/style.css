@@ -847,10 +847,13 @@ section.section7 {
 div.section7-boxs {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 div.section7-box {
     margin-bottom: 40px;
+    max-width: 321px;
+    width: 100%;
 }
 
                                                     /* MAIN-8 */
@@ -1076,10 +1079,6 @@ div.navigations {
     padding: 0 15px;
 }
 
-div.nav-link {
-    margin: 0 -15px;
-}
-
 div.footer-ul {
     display: flex;
 }
@@ -1136,7 +1135,7 @@ div.sub-email form div input {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     flex-wrap: 400;
-    height: 43px;
+    height: 44px;
     line-height: 24px;
     overflow: visible;
     padding: 6px 12px;
@@ -1314,6 +1313,44 @@ div.btn-text p a:hover {
         justify-content: center;
         align-items: center;
     }
+    
+    div.sub-email form div {
+        width: unset;
+        max-width: unset;
+    }
+    
+    div.sub-email form div input {
+        max-width: 720px;
+        width: 100%;
+    }
+    
+    div.footer-ul ul {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    div.about-travel {
+        max-width: 720px;
+    }
+    
+    div.navigations {
+        max-width: 720px;
+    }
+    
+    div.subs-email {
+        max-width: 720px;
+    }
+    
+    div.navigations {
+        padding: 0 18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 576px) {
+    div.navigations {
+        padding: 0 30px;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -1376,8 +1413,52 @@ div.btn-text p a:hover {
     div.section8-box {
         padding: 0px;
     }
+    
+    div.footer-ul {
+        flex-direction: column;
+    }
+    
+    div.footer-ul ul {
+        margin-bottom: 0px;
+    }
+    
+    div.navigations {
+        margin-bottom: 96px;
+    }
+    
+    div.section7-box {
+        max-width: 510px;
+        width: 100%;
+    }
 }
 
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    div.about-travel {
+        max-width: 540px;
+    }
+    
+    div.navigations {
+        max-width: 540px;
+    }
+    
+    div.subs-email {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    div.about-travel {
+        max-width: unset;
+    }
+    
+    div.navigations {
+        max-width: unset;
+    }
+    
+    div.subs-email {
+        max-width: unset;
+    }
+}
 
 
 
